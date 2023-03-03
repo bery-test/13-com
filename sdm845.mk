@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2018-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -334,6 +334,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0 \
     android.hardware.light@2.0.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -582,4 +586,3 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
-
