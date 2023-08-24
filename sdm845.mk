@@ -525,6 +525,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.1 \
     android.hardware.usb.gadget@1.1.vendor
 
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_sdm845
